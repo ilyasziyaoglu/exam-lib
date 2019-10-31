@@ -40,6 +40,7 @@ exam/client/dto/response/PermissionResponse.class
 exam/client/catalog/dto/response/document/DocumentResponse.class
 exam/client/common/utils/StringUtils.class
 exam/client/dto/response/UserResponse.class
+exam/client/sinav/dto/request/SinavRequest.class
 exam/client/common/dto/pager/PageResource.class
 exam/client/catalog/dto/request/product/DistributorRequest.class
 exam/client/offer/enumeration/OfferStatus.class
@@ -48,6 +49,7 @@ exam/client/common/enumeration/AbstractEnum.class
 exam/client/catalog/dto/response/product/ProductResponse.class
 exam/client/catalog/dto/response/product/ProductFeatureResponse.class
 exam/client/catalog/dto/response/company/CompanyResponse.class
+exam/client/sinav/dto/response/SinavResponse.class
 exam/client/catalog/dto/response/category/CategoryResponse.class
 exam/client/catalog/dto/response/product/FeatureResponse.class
 exam/client/catalog/dto/response/product/SimpleProductResponse.class
