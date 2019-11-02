@@ -2,6 +2,7 @@ package exam.client.questions.request;
 
 import exam.client.common.dto.request.AbstractRequest;
 import exam.client.exam_question_rel.request.ExamQuestionRequest;
+import exam.client.options.request.OptionsRequest;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -13,28 +14,11 @@ import java.util.List;
 @EqualsAndHashCode(callSuper = false)
 public class QuestionsRequest extends AbstractRequest {
 
-	private String email;
-
-	private String passwordHash;
-
-	private String username;
-
-	private String fullName;
-
-	private Date birthDate;
-
-	private boolean gender;
+	private String body;
 
 	private String imageUrl;
 
-	private float moneyBalance;
+	private String subject;
 
-	private ZonedDateTime registerDate;
-
-	private boolean isActive;
-
-	private int userType;
-
-
-	private List<ExamQuestionRequest> examQuestions;
+	private List<OptionsRequest> options;
 }

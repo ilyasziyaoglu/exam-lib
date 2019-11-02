@@ -2,6 +2,7 @@ package exam.client.questions.response;
 
 import exam.client.common.dto.response.AbstractResponse;
 import exam.client.exam_question_rel.response.ExamQuestionResponse;
+import exam.client.options.response.OptionsResponse;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -13,28 +14,11 @@ import java.util.List;
 @EqualsAndHashCode(callSuper = false)
 public class QuestionsResponse extends AbstractResponse {
 
-    private String email;
-
-    private String passwordHash;
-
-    private String username;
-
-    private String fullName;
-
-    private Date birthDate;
-
-    private boolean gender;
+    private String body;
 
     private String imageUrl;
 
-    private float moneyBalance;
+    private String subject;
 
-    private ZonedDateTime registerDate;
-
-    private boolean isActive;
-
-    private int userType;
-
-
-    private List<ExamQuestionResponse> examQuestions;
+    private List<OptionsResponse> options;
 }
