@@ -1,35 +1,40 @@
 package exam.client.users.request;
 
 import exam.client.common.dto.request.AbstractRequest;
+import exam.client.exam.dto.request.ExamRequest;
+import exam.client.exam_entered_rel.request.ExamEnteredRequest;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import java.time.ZonedDateTime;
 import java.util.Date;
+import java.util.List;
 
 @Data
 @EqualsAndHashCode(callSuper = false)
 public class UsersRequest extends AbstractRequest {
 
-	private String email;
+	private String userName;
 
 	private String passwordHash;
 
-	private String username;
-
 	private String fullName;
-
-	private Date birthDate;
-
-	private boolean gender;
 
 	private String imageUrl;
 
-	private float moneyBalance;
+	private String eMail;
 
-	private ZonedDateTime registerDate;
+	private int userType;
 
 	private boolean isActive;
 
-	private int userType;
+	private boolean gender;
+
+	private Date birthDate;
+
+	private float moneyBalance;
+
+	private List<ExamEnteredRequest> examsEntered;
+
+	private List<ExamRequest> examsCreated;
 }
