@@ -1,13 +1,11 @@
 package exam.client.users.response;
 
-import exam.client.catalog.dto.response.company.CompanyResponse;
 import exam.client.common.dto.response.AbstractResponse;
-import exam.client.exam.dto.request.ExamRequest;
+import exam.client.exam.request.ExamRequest;
 import exam.client.exam_entered_rel.request.ExamEnteredRequest;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-import java.time.ZonedDateTime;
 import java.util.Date;
 import java.util.List;
 

@@ -1,7 +1,7 @@
-package exam.client.exam.dto.request;
+package exam.client.exam.response;
 
-import exam.client.common.dto.request.AbstractRequest;
-import exam.client.exam_question_rel.request.ExamQuestionRequest;
+import exam.client.common.dto.response.AbstractResponse;
+import exam.client.exam_question_rel.response.ExamQuestionResponse;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -10,7 +10,7 @@ import java.util.List;
 
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class ExamRequest extends AbstractRequest {
+public class ExamResponse extends AbstractResponse {
 
     private String name;
 
@@ -23,4 +23,7 @@ public class ExamRequest extends AbstractRequest {
     private int questionCount;
 
     private String type;
+
+    private List<ExamQuestionResponse> examQuestions;
+
 }
