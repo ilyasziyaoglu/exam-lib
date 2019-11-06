@@ -12,6 +12,4 @@ import java.util.List;
 public class QuestionSubjectRequest extends AbstractRequest {
 
 	private String name;
-
-	private List<QuestionsRequest> questions;
 }

@@ -3,6 +3,7 @@ package exam.client.questions.response;
 import exam.client.common.dto.response.AbstractResponse;
 import exam.client.exam_question_rel.response.ExamQuestionResponse;
 import exam.client.options.response.OptionsResponse;
+import exam.client.question_subject.response.QuestionSubjectResponse;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -18,7 +19,7 @@ public class QuestionsResponse extends AbstractResponse {
 
     private String imageUrl;
 
-    private String subject;
+    private QuestionSubjectResponse subject;
 
     private List<OptionsResponse> options;
 }

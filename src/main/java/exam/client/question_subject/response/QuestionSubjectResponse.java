@@ -12,6 +12,4 @@ import java.util.List;
 public class QuestionSubjectResponse extends AbstractResponse {
 
     private String name;
-
-    private List<QuestionsResponse> questions;
 }
