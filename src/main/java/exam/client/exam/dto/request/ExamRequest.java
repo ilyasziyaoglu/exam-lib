@@ -23,6 +23,4 @@ public class ExamRequest extends AbstractRequest {
     private int questionCount;
 
     private String type;
-
-    private List<ExamQuestionRequest> examQuestions;
 }

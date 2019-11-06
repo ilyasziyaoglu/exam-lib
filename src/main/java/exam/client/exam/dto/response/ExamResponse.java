@@ -26,7 +26,4 @@ public class ExamResponse extends AbstractResponse {
     private int questionCoun;
 
     private String type;
-
-
-    private List<ExamQuestionResponse> examQuestions;
 }
